@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { services } from "@/lib/content";
+import { getBookingLink } from "@/lib/whatsapp";
+import { trackWhatsAppClick } from "@/lib/analytics";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 const rise = {
@@ -76,12 +78,14 @@ function FlagshipCard({ s }) {
                             serviceId={s.id}
                             label="Semak Pakej VIP"
                             tone="gold"
+                            surface={`service-card-${s.id}-primary`}
                             testid={`service-cta-${s.id}`}
                         />
                         <WhatsAppButton
                             serviceId="umrah"
                             label="Pakej Standard"
                             tone="ghost"
+                            surface="service-card-umrah-standard"
                             testid="service-cta-umrah-standard"
                             icon={false}
                         />
@@ -129,17 +133,17 @@ function SmallCard({ s, index, tall = false }) {
                 </p>
                 <div className="mt-5">
                     <a
-                        href={`https://wasap.my/+60182573204/${
-                            s.id === "outbound"
-                                ? "SayaBerminatKembaraOutboundBromoJogja"
-                                : s.id === "inbound"
-                                  ? "SayaNakPakejInboundMalaysia"
-                                  : s.id === "zamzam"
-                                    ? "SayaNakTempahAirZamZamOriMekah"
-                                    : "SayaNakTempahKurmaAjwaMadinah"
-                        }`}
+                        href={getBookingLink(s.id)}
                         target="_blank"
                         rel="noopener noreferrer"
+                        onClick={() =>
+                            trackWhatsAppClick({
+                                serviceId: s.id,
+                                label: s.titleEn,
+                                surface: `service-card-${s.id}`,
+                                href: getBookingLink(s.id),
+                            })
+                        }
                         data-testid={`service-cta-${s.id}`}
                         className="inline-flex items-center gap-2 text-sm text-uf-cream/85 hover:text-uf-gold transition-colors"
                     >

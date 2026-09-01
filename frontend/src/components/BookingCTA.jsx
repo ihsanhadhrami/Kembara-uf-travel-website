@@ -75,6 +75,7 @@ export default function BookingCTA() {
                         label="Buka WhatsApp — Umrah VIP"
                         tone="gold"
                         size="lg"
+                        surface="booking-cta-primary"
                         testid="cta-final-primary"
                     />
                     <WhatsAppButton
@@ -82,6 +83,7 @@ export default function BookingCTA() {
                         label="Tanya perkhidmatan lain"
                         tone="ghost"
                         size="lg"
+                        surface="booking-cta-secondary"
                         testid="cta-final-secondary"
                     />
                 </motion.div>

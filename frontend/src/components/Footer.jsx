@@ -1,7 +1,16 @@
 import React from "react";
 import Logo from "@/components/Logo";
 import { WHATSAPP_DISPLAY, INSTAGRAM_URL, TIKTOK_URL, getBookingLink } from "@/lib/whatsapp";
+import { trackWhatsAppClick } from "@/lib/analytics";
 import { brand } from "@/lib/content";
+
+const trackFooter = (serviceId, label) => () =>
+    trackWhatsAppClick({
+        serviceId,
+        label,
+        surface: "footer",
+        href: getBookingLink(serviceId),
+    });
 
 export default function Footer() {
     return (
@@ -51,6 +60,7 @@ export default function Footer() {
                                         href={getBookingLink(id)}
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        onClick={trackFooter(id, label)}
                                         data-testid={`footer-link-${id}`}
                                         className="hover:text-uf-gold transition-colors"
                                     >
@@ -71,6 +81,7 @@ export default function Footer() {
                                     href={getBookingLink("general")}
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    onClick={trackFooter("general", "Footer WhatsApp")}
                                     data-testid="footer-whatsapp"
                                     className="hover:text-uf-gold transition-colors block"
                                 >

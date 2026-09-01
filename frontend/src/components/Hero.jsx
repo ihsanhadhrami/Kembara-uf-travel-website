@@ -177,6 +177,7 @@ export default function Hero() {
                                 label="Tengok Pakej Umrah"
                                 tone="primary"
                                 size="lg"
+                                surface="hero"
                                 testid="hero-cta-primary"
                             />
                             <a

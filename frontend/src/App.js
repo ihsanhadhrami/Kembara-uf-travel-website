@@ -10,6 +10,7 @@ import DestinationGrid from "@/components/DestinationGrid";
 import SocialProof from "@/components/SocialProof";
 import BookingCTA from "@/components/BookingCTA";
 import Footer from "@/components/Footer";
+import ClickPulse from "@/components/ClickPulse";
 
 function App() {
     return (
@@ -29,6 +30,7 @@ function App() {
                     <BookingCTA />
                 </main>
                 <Footer />
+                <ClickPulse />
             </div>
         </SmoothScroll>
     );

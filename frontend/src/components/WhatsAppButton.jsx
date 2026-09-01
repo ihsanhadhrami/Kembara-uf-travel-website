@@ -1,8 +1,9 @@
 import React from "react";
 import { getBookingLink } from "@/lib/whatsapp";
+import { trackWhatsAppClick } from "@/lib/analytics";
 
 // Deep module: one WhatsApp button. Callers pass serviceId + label.
-// Owns focus ring, magnetic hover, and glow border internally.
+// Owns focus ring, magnetic hover, glow border, and click analytics internally.
 export default function WhatsAppButton({
     serviceId = "general",
     context = "",
@@ -11,9 +12,20 @@ export default function WhatsAppButton({
     size = "md",
     className = "",
     testid,
+    surface,
     icon = true,
 }) {
     const href = getBookingLink(serviceId, context);
+
+    const onClick = () => {
+        trackWhatsAppClick({
+            serviceId,
+            context,
+            label,
+            surface: surface || testid || `wa-cta-${serviceId}`,
+            href,
+        });
+    };
 
     const base =
         "group relative inline-flex items-center gap-2.5 rounded-full font-medium tracking-tight transition-all duration-300 will-change-transform";
@@ -36,6 +48,7 @@ export default function WhatsAppButton({
             href={href}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={onClick}
             data-testid={testid || `wa-cta-${serviceId}`}
             className={`${base} ${sizes[size]} ${tones[tone]} ${className}`}
         >

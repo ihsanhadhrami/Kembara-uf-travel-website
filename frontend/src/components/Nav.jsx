@@ -71,6 +71,7 @@ export default function Nav() {
                             label="Book Umrah"
                             tone="primary"
                             size="sm"
+                            surface="nav"
                             testid="nav-cta-whatsapp"
                             className="hidden sm:inline-flex"
                         />
@@ -121,6 +122,7 @@ export default function Nav() {
                                     label="Buka WhatsApp"
                                     tone="primary"
                                     size="md"
+                                    surface="nav-mobile"
                                     testid="nav-mobile-cta"
                                 />
                             </div>
