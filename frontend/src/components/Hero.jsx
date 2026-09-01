@@ -87,14 +87,6 @@ export default function Hero() {
                             <span className="w-1.5 h-1.5 rounded-full bg-uf-teal animate-pulse" />
                             Live · Slot Umrah Mac – Mei 2026
                         </motion.span>
-                        <motion.span
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 0.5, duration: 1 }}
-                            className="hidden md:block"
-                        >
-                            N 1° 27′ · E 103° 45′ — Johor Bahru
-                        </motion.span>
                     </div>
                 </div>
             </div>
