@@ -47,9 +47,6 @@ export default function Nav() {
                             <span className="font-display text-[19px] tracking-wide text-uf-cream">
                                 Kembara UF
                             </span>
-                            <span className="font-mono text-[10px] uppercase tracking-[0.28em] text-uf-teal/80">
-                                Est. Johor · JM1005380-H
-                            </span>
                         </div>
                     </a>
 
