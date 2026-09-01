@@ -1,0 +1,100 @@
+{
+  "project_name": "Kembara UF (UF Travel)",
+  "app_type": "marketing_landing_page",
+  "ssm_number": "SSM JM1005380-H",
+  "location": "Johor, Malaysia",
+  "contact": {
+    "whatsapp_number": "+60182573204",
+    "whatsapp_link": "https://wasap.my/+60182573204/SayaNakTengokPakejUmrah",
+    "instagram": "@uf.travel",
+    "tiktok": "@uf.travel"
+  },
+  "brand_identity": {
+    "tagline_malay": "Jom Umrah Private/VIP & Kembara Nusantara Bersama Kami",
+    "tagline_english": "Bespoke Pilgrimage & Curated Outbound Journeys",
+    "logo_concept": "Blue/Teal UF monogram with wave and bird motif on a circular seal",
+    "emotional_archetype": "Sacred Pilgrimage Reverence meets High-Energy Volcanic Adventure",
+    "signature_visual_element": "Subtle geometric wave line motif echoing the UF logo as a divider and dynamic border accent"
+  },
+  "colors": {
+    "theme_type": "Deep Obsidian Navy with Volcanic Gold & Celestial Teal accents",
+    "background_primary": "#08101D",
+    "background_secondary": "#0E182A",
+    "surface_card": "#132136",
+    "surface_glass": "rgba(14, 24, 42, 0.75)",
+    "primary_brand": "#14B8A6",
+    "primary_hover": "#0D9488",
+    "accent_gold": "#F59E0B",
+    "accent_gold_glow": "#D97706",
+    "accent_volcanic": "#EF4444",
+    "text_primary": "#F8FAFC",
+    "text_secondary": "#94A3B8",
+    "text_muted": "#64748B",
+    "border_subtle": "rgba(255, 255, 255, 0.1)",
+    "border_active": "rgba(20, 184, 166, 0.4)",
+    "forbidden_colors": [
+      "#7351B7",
+      "flat pure black #000000 without tint",
+      "generic high-contrast cream/terracotta templates"
+    ]
+  },
+  "typography": {
+    "heading_font": "Cinzel Decor / Cormorant Garamond",
+    "subheading_font": "Plus Jakarta Sans",
+    "body_font": "Plus Jakarta Sans",
+    "arabic_decorative_font": "Amiri",
+    "mono_accent_font": "JetBrains Mono",
+    "hierarchy": {
+      "h1_hero": "text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-tight",
+      "h2_section": "text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight",
+      "h3_card": "text-xl sm:text-2xl font-medium",
+      "body_text": "text-sm sm:text-base text-slate-300 leading-relaxed",
+      "overline": "text-xs uppercase tracking-[0.25em] text-teal-400 font-semibold"
+    }
+  },
+  "grids_and_layouts": {
+    "hero_layout": "Asymmetric kinetic hero with floating 3D/parallax card depth, line-by-line text reveal",
+    "service_grid_mode": "Tetris Bento Mode (Umrah VIP flagship occupies 2 columns and full height, supporting 4 services in responsive grid)",
+    "destination_grid": "4-column region gallery (Saudi Arabia, Indonesia, Egypt, Malaysia Inbound) with hover zoom and focal spotlight",
+    "manifesto_chapters": "Stacked numbered editorial layout (01 to 04) with vertical timeline guide line",
+    "social_proof_grid": "Authentic TikTok/IG styled vertical card carousel and video grid with micro interaction overlays"
+  },
+  "motion_and_effects": {
+    "smooth_scroll": "Lenis momentum smooth scrolling",
+    "scroll_reveal": "framer-motion opacity + y-axis reveal with staggered children transitions",
+    "micro_interactions": "Magnetic button hovers, subtle 3D card tilt effect via mouse movement, glow tracing borders",
+    "marquee": "Slow editorial text ribbon drifting at 35s speed with gold and teal dividers"
+  },
+  "3d_libraries": {
+    "library_used": "@react-three/fiber + @react-three/drei (or Canvas subtle particle wave and 3D globe/card tilt)",
+    "fallback": "Framer motion 3D perspective tilt if WebGL canvas is reduced motion"
+  },
+  "media_and_image_urls": {
+    "hero_makkah_kaaba": "https://images.unsplash.com/photo-1592326871020-04f58c1a52f3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHxfYXJ3YWJtfGVufDB8fHx8MTc4NjQ1Nzk0MHww&q=85",
+    "umrah_nabawi_sunset": "https://images.unsplash.com/photo-1720549973451-018d3623b55a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHwyfHxrYWFiYSUyMG1ha2thaCUyMHN1bnNldHxlbnwwfHx8fDE3ODY0NTc5NDB8MA&q=85",
+    "bromo_sunrise": "https://images.pexels.com/photos/38262907/pexels-photo-38262907.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "bromo_jeep_landscape": "https://images.unsplash.com/photo-1548430065-53c58a6582dd?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "egypt_pyramids": "https://images.unsplash.com/photo-1771251059397-765d5ccbbd78?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "categories": {
+      "umrah": "Makkah & Madinah Sacred Sites",
+      "indonesia": "Mount Bromo Sunrise Jeep Tours & Jogja Gondola",
+      "egypt": "Giza Pyramids & Nile Exploration",
+      "malaysia": "Domestic Nature & Waterfalls Inbound",
+      "suppliers": "Zam-Zam Ori Mekah & Ajwa Dates Madinah"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Ensure every CTA dynamically formats WhatsApp message with pre-filled context using `wasap.my/+60182573204/SayaNakTengokPakejUmrah` or custom service name.",
+    "Implement bilingual Malay-first language switcher with instant React state toggling.",
+    "Strictly apply `data-testid` attributes to all interactive elements (buttons, nav links, filters, form fields).",
+    "Set header backdrop to `backdrop-blur-xl bg-[#08101D]/80` with 1px border `border-white/10` to avoid transparency overlap issues.",
+    "Make Umrah VIP package visually dominant in ServiceGrid with a gold badge, custom highlights, and higher weight than other services.",
+    "Keep SSM registration SSM JM1005380-H clearly visible in footer along with Johor location notice."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Do NOT use generic templates or flat white cards. Use deep slate-navy surfaces with 1px subtle borders.",
+    "Do NOT use standard HTML input type=date or select; use customized Shadcn primitives where applicable.",
+    "All interactive elements must have hover, focus, and press states with visible contrast.",
+    "Maintain responsive grid safety for mobile viewports (p-4 to p-6 padding, clear tap targets >= 44px)."
+  ]
+}
