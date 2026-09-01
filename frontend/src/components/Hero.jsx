@@ -151,7 +151,7 @@ export default function Hero() {
                             transition={{ delay: 0.9, duration: 1 }}
                             className="mt-8 max-w-xl text-uf-cream/75 text-base md:text-lg leading-relaxed"
                         >
-                            A small Johor team taking rombongan kecil to the
+                            A small team taking rombongan kecil to the
                             <em className="text-uf-cream not-italic"> Haramain</em>,
                             up Bromo at 04:00, and home again with kurma Ajwa
                             in hand. Umrah, outbound, inbound — all on
