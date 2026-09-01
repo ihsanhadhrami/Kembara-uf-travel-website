@@ -34,9 +34,13 @@ export default function Nav() {
             <div className="max-w-[1440px] mx-auto px-5 md:px-10">
                 <div className="flex items-center justify-between h-[72px]">
                     <a
-                        href="#top"
+                        href="/"
                         data-testid="nav-logo"
-                        className="flex items-center gap-3 group"
+                        onClick={(e) => {
+                            e.preventDefault();
+                            window.location.assign("/");
+                        }}
+                        className="flex items-center gap-3 group cursor-pointer"
                     >
                         <Logo size={38} />
                         <div className="hidden sm:flex flex-col leading-tight">
