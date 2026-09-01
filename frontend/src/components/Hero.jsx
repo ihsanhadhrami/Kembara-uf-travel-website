@@ -207,24 +207,24 @@ export default function Hero() {
                             className="relative aspect-[3/4] rounded-[28px] overflow-hidden border border-white/15 shadow-[0_40px_80px_-20px_rgba(0,0,0,0.7)]"
                         >
                             <img
-                                src="https://images.pexels.com/photos/38262907/pexels-photo-38262907.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1200&w=940"
-                                alt="Bromo sunrise — jeep tour"
+                                src="https://images.unsplash.com/photo-1592326871020-04f58c1a52f3?crop=entropy&cs=srgb&fm=jpg&q=90&w=1200"
+                                alt="Kaabah, Masjidil Haram — Makkah"
                                 className="w-full h-full object-cover"
                             />
                             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/70" />
 
                             <div className="absolute top-4 left-4 flex items-center gap-2">
                                 <span className="font-mono text-[10px] uppercase tracking-[0.28em] text-uf-cream bg-uf-navy/70 backdrop-blur px-2 py-1 rounded">
-                                    Bromo · 04:32
+                                    Makkah · 03:18
                                 </span>
                             </div>
 
                             <div className="absolute bottom-5 left-5 right-5">
                                 <div className="font-display text-2xl text-uf-cream">
-                                    Sunrise, atas gunung berapi.
+                                    Tawaf, di rumah Allah.
                                 </div>
                                 <div className="mt-1 text-[12px] font-mono uppercase tracking-[0.22em] text-uf-gold/80">
-                                    108.4K views · @uf.travel
+                                    Umrah Private · @uf.travel
                                 </div>
                             </div>
                         </motion.div>
